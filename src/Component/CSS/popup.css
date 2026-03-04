@@ -1,0 +1,47 @@
+.popup h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+.popup{
+    background-color:#5eab1a79;
+    margin: 10px 200px 10px 200px;
+    border-radius: 10px 10px 10px 10px;
+}
+#btnClose{
+    background:#ab8e1a8e;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    border-radius: 15px 15px 15px 15px;
+  }
+  #btnClose:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  #btnClose:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  #btnClose:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  #btnClose:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
